@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troublesho">
+<meta name="description" content="1. 自定义 Exception123456public class MyException extends Exception &amp;#123;    public MyException(String message) &amp;#123;        super(message);    &amp;#125">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/11/22/hello-world/index.html">
+<meta property="og:title" content="spring boot 统一异常处理">
+<meta property="og:url" content="http://yoursite.com/2017/11/27/spring boot 统一异常处理/index.html">
 <meta property="og:site_name" content="小白菜">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1. 自定义 Exception123456public class MyException extends Exception &amp;#123;    public MyException(String message) &amp;#123;        super(message);    &amp;#125;&amp;#125; 2. 定义异常处理类123456789@ControllerAdvicepublic c">
 <meta property="og:locale" content="ZH-hans">
-<meta property="og:updated_time" content="2017-11-22T05:30:36.627Z">
+<meta property="og:updated_time" content="2017-11-27T12:18:39.551Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="spring boot 统一异常处理">
+<meta name="twitter:description" content="1. 自定义 Exception123456public class MyException extends Exception &amp;#123;    public MyException(String message) &amp;#123;        super(message);    &amp;#125;&amp;#125; 2. 定义异常处理类123456789@ControllerAdvicepublic c">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/11/22/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/27/spring boot 统一异常处理/"/>
 
 
 
 
 
-  <title>Hello World | 小白菜</title>
+  <title>spring boot 统一异常处理 | 小白菜</title>
   
 
 
@@ -232,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/22/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/27/spring boot 统一异常处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CaiRR">
@@ -249,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">spring boot 统一异常处理</h1>
         
 
         <div class="post-meta">
@@ -261,8 +262,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-22T13:30:36+08:00">
-                2017-11-22
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-27T20:10:11+08:00">
+                2017-11-27
               </time>
             
 
@@ -271,6 +272,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -299,15 +322,22 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h3 id="1-自定义-Exception"><a href="#1-自定义-Exception" class="headerlink" title="1. 自定义 Exception"></a>1. 自定义 Exception</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyException</span> <span class="keyword">extends</span> <span class="title">Exception</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyException</span><span class="params">(String message)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-定义异常处理类"><a href="#2-定义异常处理类" class="headerlink" title="2. 定义异常处理类"></a>2. 定义异常处理类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ControllerAdvice</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GlobalExceptionHandler</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExceptionHandler</span>(value = MyException.class) <span class="comment">// 指定异常类</span></span><br><span class="line">    <span class="meta">@ResponseBody</span> <span class="comment">// 返回 json 格式</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">jsonErrorHandler</span><span class="params">( MyException e)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> JsonHelper.error(e.getMessage());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-使用"><a href="#3-使用" class="headerlink" title="3. 使用"></a>3. 使用</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"/testError"</span>)</span><br><span class="line"> <span class="function"><span class="keyword">public</span> String <span class="title">error</span><span class="params">(@RequestParam(value = <span class="string">"type"</span>,required = <span class="keyword">false</span>)</span> <span class="keyword">int</span> type) <span class="keyword">throws</span> MyException </span>&#123;</span><br><span class="line">     <span class="keyword">if</span> (type == <span class="number">1</span>) &#123;</span><br><span class="line">         <span class="keyword">throw</span> <span class="keyword">new</span> MyException(<span class="string">"自主抛出异常"</span>); <span class="comment">// 抛异常 throw</span></span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> JsonHelper.success(<span class="string">"ok"</span>);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="4-测试"><a href="#4-测试" class="headerlink" title="4. 测试"></a>4. 测试</h3><ul>
+<li><p>输入: <a href="http://localhost:9090/testError?type=0" target="_blank" rel="noopener">http://localhost:9090/testError?type=0</a></p>
+<blockquote>
+<p>返回: {“msg”:”成功”,”code”:0,”data”:”ok”,”status”:”0”}</p>
+</blockquote>
+</li>
+<li><p>输入:<a href="http://localhost:9090/testError?type=1" target="_blank" rel="noopener">http://localhost:9090/testError?type=1</a></p>
+<blockquote>
+<p>返回: {“msg”:”失败”,”code”:1,”data”:”自主抛出异常”,”status”:”1”}</p>
+</blockquote>
+</li>
+</ul>
+<p>就是这么简单 (●’◡’●)</p>
 
       
     </div>
@@ -323,6 +353,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
 
       
       
@@ -332,15 +368,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/11/23/hexo博客搭建过程/" rel="next" title="hexo 博客搭建过程">
+                <i class="fa fa-chevron-left"></i> hexo 博客搭建过程
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/22/java - 内存区域/" rel="prev" title="java 内存区域">
-                java 内存区域 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -472,7 +508,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-自定义-Exception"><span class="nav-number">1.</span> <span class="nav-text">1. 自定义 Exception</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-定义异常处理类"><span class="nav-number">2.</span> <span class="nav-text">2. 定义异常处理类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-使用"><span class="nav-number">3.</span> <span class="nav-text">3. 使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-测试"><span class="nav-number">4.</span> <span class="nav-text">4. 测试</span></a></li></ol></div>
             
 
           </div>
